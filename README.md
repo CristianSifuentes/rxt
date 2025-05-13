@@ -87,6 +87,14 @@ React follows a **major-version-centric documentation strategy** to help develop
     - [React v0.11.1 (July 2014)](#react-v0111-july-2014)
     - [React v0.11.2 (September 2014)](#react-v0112-september-2014)
     - [React 0.11 Expert Summary](#react-011-expert-summary)
+13. [React Versions 0.x Timeline (v0.3.0 to v0.10.0)](#react-versions-0x-timeline-v030-to-v-10-0)
+    - [React v0.10.0 (March 2014)](#react-v0100-march-2014)
+    - [React v0.9.0 (February 2014)](#react-v090-february-2014)
+    - [React v0.8.0 (December 2013)](#react-v080-december-2013)
+    - [React v0.5.0 - v0.5.2 (October–December 2013)](#react-v050---v052-octoberdecember-2013)
+    - [React v0.4.0 - v0.4.1 (July 2013)](#react-v040---v041-july-2013)
+    - [React v0.3.1 - v0.3.3 (May–June 2013)](#react-v031---v033-mayjune-2013)
+    - [React v0.3.0 (May 2013)](#react-v030-may-2013)
 14. [Expert Summary](#expert-summary)
 
 
@@ -935,6 +943,151 @@ React 0.11 represented a shift in mindset from a developer experiment to a relia
 
 ### 🧠 Why It Matters
 React 0.11 marks the version where React's internals matured significantly, proving that virtual DOM could handle not just toy examples but large-scale apps. It became the precursor to architectural decisions that would later lead to React 15+ and React Fiber (v16).
+
+---
+# React Versions 0.x Timeline (v0.3.0 to v0.10.0)
+
+This document provides a detailed breakdown of React versions prior to v0.11, covering their features, changes, and architectural significance. Each version includes key features, what was added compared to the previous version, limitations, and expert-level insights.
+
+---
+
+## React v0.3.0 (May 2013)
+
+### Key Features
+- First public release.
+- JSX syntax.
+- Virtual DOM and React.createElement().
+- Component-based design.
+
+### Highlights
+- Introduced functional and class components.
+- Manual state management via `this.setState()`.
+
+### Limitations
+- No lifecycle hooks beyond basic mounting.
+- No ecosystem.
+
+### Key Conclusion
+- Foundation for declarative UIs in JavaScript.
+
+---
+
+## React v0.3.1 - v0.3.3 (May–June 2013)
+
+### Things Added
+- Minor bug fixes.
+- Performance improvements.
+- Internal refactoring.
+
+### Highlights
+- Stability upgrades.
+
+### Limitations
+- Still early-stage experimental.
+
+---
+
+## React v0.4.0 - v0.4.1 (July 2013)
+
+### Key Features
+- Introduced PropTypes for type checking.
+- Default props (`getDefaultProps`).
+- Comment nodes support.
+
+### Highlights
+- More robust validation & developer guidance.
+
+### Limitations
+- No server-side rendering.
+- Limited event support.
+
+### Key Conclusion
+- Early push toward developer tooling and DX improvements.
+
+---
+
+## React v0.5.0 - v0.5.2 (October–December 2013)
+
+### Key Features
+- Introduced `React.Children` utilities.
+- Input value tracking.
+- Lifecycle method `componentWillMount()`.
+
+### Things Added Compared to Previous
+- Performance optimization for controlled inputs.
+
+### Highlights
+- Expansion into form handling and component composition.
+
+### Limitations
+- Inconsistent reconciliation with text inputs.
+
+### Key Conclusion
+- Significant move toward interactive UI components.
+
+---
+
+## React v0.8.0 (December 2013)
+
+### Key Features
+- DOM property support expansion (e.g., `rows`, `cols`, `autoCorrect`).
+- Added event support (`onContextMenu`).
+
+### Highlights
+- Increased HTML5 compatibility.
+
+### Limitations
+- Still lacked cross-browser consistency.
+
+### Key Conclusion
+- Emphasized HTML fidelity and compatibility.
+
+---
+
+## React v0.9.0 (February 2014)
+
+### Key Features
+- Added more attributes (`crossOrigin`, `sandbox`, `scope`).
+- `PropTypes.shape()` for nested prop validation.
+- Better React.withContext()
+
+### Highlights
+- Advanced validation and structure control.
+
+### Limitations
+- Verbose context handling.
+
+### Key Conclusion
+- Push toward maintainable, large-scale apps.
+
+---
+
+## React v0.10.0 (March 2014)
+
+### Key Features
+- `srcSet` support for responsive images.
+- First appearance of `React.addons.update()` for immutable-style state updates.
+
+### Highlights
+- Foundation for responsive rendering and immutability.
+
+### Limitations
+- No support for hooks or async rendering yet.
+
+### Key Conclusion
+- Setup for declarative data management and device support.
+
+---
+
+## 🧠 Summary of React 0.x Versions
+- v0.3.0: Initial architecture and syntax (JSX, Virtual DOM).
+- v0.4.x: Developer guidance improvements (PropTypes).
+- v0.5.x: Composition and form control.
+- v0.8.x: DOM and event compatibility.
+- v0.9.x: Component data structure and context fidelity.
+- v0.10.x: Responsive rendering + immutable data update utilities.
+
+These early versions laid the groundwork for React's scalability and developer experience, including its eventual dominance through features like hooks, concurrent rendering, and compiler-assisted reactivity.
 
 ---
 
