@@ -74,9 +74,20 @@ React follows a **major-version-centric documentation strategy** to help develop
     - [React v0.13.1 (March 2015)](#react-v0131-march-2015)
     - [React v0.13.2 (April 2015)](#react-v0132-april-2015)
     - [React v0.13.3 (May 2015)](#react-v0133-may-2015)
-    - [Expert Summary](#expert-summary)
-
-12. [Expert Summary](#expert-summary)
+    - [Expert 0.13 Summary](#expert-013-summary)
+12. [React 0.12 Timeline and Expert Summary](#react-012-timeline-and-expert-summary)
+    - [React 0.12 Overview](#react-012-overview)
+    - [React v0.12.0 (October 2014)](#react-v0120-october-2014)
+    - [React v0.12.1 (November 2014)](#react-v0121-november-2014)
+    - [React v0.12.2 (December 2014)](#react-v0122-december-2014)
+    - [React 0.12 Expert Summary](#react-012-expert-summary)
+13. [React 0.11 Timeline and Expert Summary](#react-011-timeline-and-expert-summary)
+    - [React 0.11 Overview](#react-011-overview)
+    - [React v0.11.0 (July 2014)](#react-v0110-july-2014)
+    - [React v0.11.1 (July 2014)](#react-v0111-july-2014)
+    - [React v0.11.2 (September 2014)](#react-v0112-september-2014)
+    - [React 0.11 Expert Summary](#react-011-expert-summary)
+14. [Expert Summary](#expert-summary)
 
 
 ---
@@ -753,6 +764,180 @@ React 0.13 was a transformational release that modernized how React developers a
 React 0.13 set the groundwork for everything from **hooks** to **async rendering** by promoting stateless purity and modularity. It remains one of the most important versions in React’s architectural evolution.
 
 ---
+
+
+# React 0.12 Timeline and Expert Summary
+
+This document provides a deep technical overview of React v0.12.x, including all key releases. React 0.12 was a transitional version that modernized React's core principles and syntax in preparation for the more mature architecture in v0.13+.
+
+---
+
+## React 0.12 Overview
+
+React 0.12 introduced major syntax changes and cleaned up several legacy APIs. It also laid the foundation for composability, unidirectional data flow, and future integrations with ES6+ modules.
+
+---
+
+## React v0.12.0 (October 2014)
+
+### Key Features
+- Renamed `React.renderComponent` → `React.render`
+- Better error messages and stack traces.
+- Deprecated old patterns like `getDOMNode()` usage.
+- Improved component naming for debugging.
+
+### Highlights
+- Simplified API (`React.render`) marked a move toward modern idioms.
+- Prepared the community for more semantic and concise patterns.
+- Better integration with developer tools.
+
+### Limitations
+- Still lacked support for ES6 classes and modules.
+- Manual binding of `this` still required.
+
+### Key Conclusion
+- A cleanup release that aligned API ergonomics with modern development standards.
+
+---
+
+## React v0.12.1 (November 2014)
+
+### Key Features
+- Minor bug fixes.
+- Resolved performance regressions in component diffing.
+- Improved error handling in JSX parsing.
+
+### Highlights
+- Stability improvements across JSX-heavy applications.
+
+### Limitations
+- JSX parsing still dependent on experimental Babel versions.
+
+### Key Conclusion
+- Addressed early-adopter issues while preparing for v0.13’s structural shift.
+
+---
+
+## React v0.12.2 (December 2014)
+
+### Key Features
+- Better warnings for deprecated APIs.
+- More consistent behavior for stateless render-only components.
+- Enhanced behavior of `refs`.
+
+### Highlights
+- Paved the way for function components by refining render-only logic.
+- Strengthened internal handling of component lifecycle assumptions.
+
+### Limitations
+- Did not yet introduce functional stateless components formally.
+
+### Key Conclusion
+- A final polishing step before React's formalization of stateless component design in v0.13.
+
+---
+
+## React 0.12 Expert Summary
+
+React 0.12 signified a **semantic and structural shift** in the React ecosystem. It broke away from old patterns, updated terminology, and introduced forward-looking API conventions.
+
+### 🧠 Why It Matters
+
+- **API Consistency**: Renaming to `React.render()` aligned naming conventions with mental models.
+- **Tooling Focus**: Enhanced error messages and stack traces improved debugging.
+- **Component Hygiene**: Deprecated legacy accessors and patterns like `getDOMNode()`.
+- **Preparation for Stateless Components**: Built internal support for leaner component logic.
+
+React 0.12 was more than a patch—it was a **refactor of React's public surface**, ensuring consistency and maintainability in the face of rapid community growth and ecosystem evolution.
+
+---
+
+
+# React 0.11 Timeline and Expert Summary
+
+This document offers a detailed, professional breakdown of React version 0.11, including all its patch releases. It highlights architectural decisions and prepares the ground for the shift toward React 0.12+.
+
+---
+
+## React 0.11 Overview
+
+React 0.11 marked a pivotal milestone toward React 1.0. It introduced **refinements to the virtual DOM**, better **SVG support**, and **performance improvements**. A focus on **production-readiness** and stronger alignment with the W3C spec made this version critical in React's evolution.
+
+---
+
+## React v0.11.0 (July 2014)
+
+### Key Features
+- Enhanced support for SVG and HTML5 DOM attributes.
+- Improved event system and normalization.
+- Initial support for context propagation through `React.withContext`.
+- Better alignment with browser DOM standards.
+
+### Highlights
+- Allowed more seamless use of inline SVG.
+- Improved developer control over non-standard DOM attributes.
+- Foundation for context propagation pattern.
+
+### Limitations
+- Context API still experimental and verbose.
+- Lack of stability in prop-type enforcement for complex objects.
+
+### Key Conclusion
+- React 0.11 moved React closer to real-world production readiness and platform alignment, while enabling component reuse across SVG and HTML.
+
+---
+
+## React v0.11.1 (July 2014)
+
+### Key Features
+- Bug fixes and memory leak patches.
+- Minor improvements in diffing behavior.
+- Better warnings for invalid DOM nesting.
+
+### Highlights
+- Better dev ergonomics and reduced runtime surprises.
+
+### Limitations
+- Still lacked comprehensive developer tooling.
+
+### Key Conclusion
+- Stability release to prepare for upcoming architectural improvements.
+
+---
+
+## React v0.11.2 (September 2014)
+
+### Key Features
+- Performance improvements to `shouldComponentUpdate`.
+- Refined internal reconciliation behavior.
+- Better support for escaping and sanitizing content.
+
+### Highlights
+- Helped optimize large component trees.
+- Improved security and render fidelity.
+
+### Limitations
+- Internal APIs still exposed edge-case bugs under high load.
+
+### Key Conclusion
+- A solidifying step to make React scalable and secure in real-world apps.
+
+---
+
+## React 0.11 Expert Summary
+
+React 0.11 represented a shift in mindset from a developer experiment to a reliable, production-ready UI engine. Key takeaways:
+
+- **Platform Compatibility**: Focused on aligning React's DOM diffing and rendering logic with HTML5 and SVG specifications.
+- **Context Foundation**: Laid the groundwork for future context API usage.
+- **Security Focus**: Introduced mechanisms to sanitize rendered output, critical for XSS mitigation.
+- **Performance Awareness**: Improved lifecycle handling, paving the way for Fiber in future versions.
+
+### 🧠 Why It Matters
+React 0.11 marks the version where React's internals matured significantly, proving that virtual DOM could handle not just toy examples but large-scale apps. It became the precursor to architectural decisions that would later lead to React 15+ and React Fiber (v16).
+
+---
+
 
 ## Expert Summary
 
