@@ -31,7 +31,7 @@ React follows a **major-version-centric documentation strategy** to help develop
     - [React v17.0.1 (October 2020)](#react-v1701-october-2020)
     - [React v17.0.2 (March 2021)](#react-v1702-march-2021)
     - [React 17 Expert Summary](#react-17-expert-summary)
-
+    
 8. [Expert Summary](#expert-summary)
 
 
