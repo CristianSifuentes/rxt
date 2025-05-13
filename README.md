@@ -16,7 +16,6 @@ React follows a **major-version-centric documentation strategy** to help develop
     - [React v19.0.0 (December 2024)](#react-v1900-december-2024)
     - [React v19.1.0 (March 2025)](#react-v1910-march-2025)
     - [React 19 Expert Summary](#react-19-expert-summary)
-<!-- 4. [Expert Summary](#expert-summary) -->
 6. [React 18 Timeline and Expert Summary](#react-18-timeline-and-expert-summary)
     - [React 18 Overview](#react-18-overview)
     - [React v18.0.0 (March 2022)](#react-v1800-march-2022)
@@ -87,7 +86,7 @@ React follows a **major-version-centric documentation strategy** to help develop
     - [React v0.11.1 (July 2014)](#react-v0111-july-2014)
     - [React v0.11.2 (September 2014)](#react-v0112-september-2014)
     - [React 0.11 Expert Summary](#react-011-expert-summary)
-13. [React Versions 0.x Timeline (v0.3.0 to v0.10.0)](#react-versions-0x-timeline-v030-to-v-10-0)
+13. [React Versions 0.x Timeline (v0.3.0 to v0.10.0)](#react-versions-0x-timeline-v030-to-v0100)
     - [React v0.10.0 (March 2014)](#react-v0100-march-2014)
     - [React v0.9.0 (February 2014)](#react-v090-february-2014)
     - [React v0.8.0 (December 2013)](#react-v080-december-2013)
@@ -1059,6 +1058,12 @@ This document provides a detailed breakdown of React versions prior to v0.11, co
 
 ### Key Conclusion
 - Push toward maintainable, large-scale apps.
+
+---
+
+# React Versions 0.x Timeline (v0.3.0 to v0.10.0)
+
+This document provides a detailed breakdown of React versions prior to v0.11, covering their features, changes, and architectural significance. Each version includes key features, what was added compared to the previous version, limitations, and expert-level insights.
 
 ---
 
