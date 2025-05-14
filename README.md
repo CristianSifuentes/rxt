@@ -5,7 +5,7 @@ React follows a **major-version-centric documentation strategy** to help develop
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 1. [Overview](#overview)
 2. [Versioning Policy](#versioning-policy)
